@@ -118,6 +118,40 @@
             </button>
         </div>
     </div>
+    
+    <script>
+        const quantityText = document.getElementById('quantity-text');
+        let itemQuantity = document.getElementById('item-quantity');
+        let itemTotal = document.getElementById('item-total');
+        function inc() {
+            let quantity = parseInt(quantityText.innerText);
+
+            if (quantity < 6) {
+                quantityText.innerText = ++quantity;
+            }
+            else {
+                alert("At a time you can buy only 6 items");
+            }
+
+            totalAmount(quantity);
+        }
+
+        function dnc() {
+            let quantity = parseInt(quantityText.innerText);
+
+            if (quantity > 1) {
+                quantityText.innerText = --quantity;
+            }
+            else {
+                alert("Reached to Minimum limit")
+            }
+            totalAmount(quantity)
+        }
+        function totalAmount(quantity) {
+            itemQuantity.innerText = `${quantity} x ₹ 599`;
+            itemTotal.innerText = `Total: ${quantity * 599}`;
+        }
+    </script>
 </body>
 
 </html>
