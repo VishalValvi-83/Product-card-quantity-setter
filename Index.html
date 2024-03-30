@@ -60,6 +60,30 @@
             margin: 0 auto;
             margin-top: 40px;
         }
+
+        .quantity-container {
+            display: flex;
+            margin-top: 30px;
+            gap: 10px;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .quantity-btn-container {
+            display: flex;
+            color: firebrick;
+        }
+
+        .btn-quantity {
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .quantity-text {
+            font-size: 17px;
+            padding: 0 4px;
+
+        }
     </style>
 </head>
 
@@ -76,7 +100,19 @@
             <span class="product-price">
                 ₹ 599/-
             </span>
+            <div class="quantity-container">
 
+                <div class="quantity-btn-container">
+                    <span>Set quantity : </span>
+                    <img src="minus.png" class="btn-quantity" onclick="dnc()">
+                    <span class="quantity-text" id="quantity-text">1</span>
+                    <img src="add.png" class="btn-quantity " onclick="inc()">
+                </div>
+                <div style="display: flex; gap: 50px;">
+                    <span id="item-quantity">1 x ₹ 599</span>
+                    <span id="item-total"></span>
+                </div>
+            </div>
             <button type="button" class="btn-buy-now">
                 Buy Now
             </button>
