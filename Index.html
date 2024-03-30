@@ -5,10 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product card</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+
+        .product-card {
+            width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            margin: 30px auto;
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .bag-img {
+            border-radius: 15px;
+            display: block;
+            margin: 0px auto;
+            width: 100%;
+            height: 350px;
+        }
+
+        .card-content {
+            margin: 0 10px;
+        }
+
+        .product-title {
+            font-size: 20px;
+            color: firebrick;
+
+        }
+
+        .product-description {
+            font-size: 11px;
+        }
+
+        .product-price {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .btn-buy-now {
+            text-decoration: none;
+            padding: 15px 30px;
+            font-weight: 600;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            background-color: firebrick;
+            display: block;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 
 <body>
-    
+    <div class="product-card">
+        <img src="blazer.jpeg" class="bag-img" />
+        <div class="card-content">
+            <h1 class="product-title">The Indian Garage Co. Solid Single Breasted Casual Men Blazer</h1>
+
+            <p class="product-description">
+                Elevate your style with our versatile cotton blazer, featuring a regular cuff and welt pocket for a
+                classic Oxford-inspired look.
+            </p>
+            <span class="product-price">
+                ₹ 599/-
+            </span>
+
+            <button type="button" class="btn-buy-now">
+                Buy Now
+            </button>
+        </div>
+    </div>
 </body>
 
 </html>
