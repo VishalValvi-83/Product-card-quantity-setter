@@ -4,87 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
     <title>Product card</title>
-    <style>
-        body {
-            background-color: #f1f1f1;
-            font-family: Arial, sans-serif;
-        }
-
-        .product-card {
-            width: 500px;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            display: flex;
-            margin: 30px auto;
-            padding: 10px;
-            background-color: #fff;
-        }
-
-        .bag-img {
-            border-radius: 15px;
-            display: block;
-            margin: 0px auto;
-            width: 100%;
-            height: 350px;
-        }
-
-        .card-content {
-            margin: 0 10px;
-        }
-
-        .product-title {
-            font-size: 20px;
-            color: firebrick;
-
-        }
-
-        .product-description {
-            font-size: 11px;
-        }
-
-        .product-price {
-            font-weight: bold;
-            font-size: 25px;
-        }
-
-        .btn-buy-now {
-            text-decoration: none;
-            padding: 15px 30px;
-            font-weight: 600;
-            border: none;
-            border-radius: 20px;
-            color: white;
-            background-color: firebrick;
-            display: block;
-            margin: 0 auto;
-            margin-top: 40px;
-        }
-
-        .quantity-container {
-            display: flex;
-            margin-top: 30px;
-            gap: 10px;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        .quantity-btn-container {
-            display: flex;
-            color: firebrick;
-        }
-
-        .btn-quantity {
-            height: 20px;
-            cursor: pointer;
-        }
-
-        .quantity-text {
-            font-size: 17px;
-            padding: 0 4px;
-
-        }
-    </style>
 </head>
 
 <body>
@@ -118,7 +40,7 @@
             </button>
         </div>
     </div>
-    
+
     <script>
         const quantityText = document.getElementById('quantity-text');
         let itemQuantity = document.getElementById('item-quantity');
